@@ -1,5 +1,9 @@
-const ReviewDetails = ({ params }: { params: { rid: string; id: string } }) => {
-  const { rid, id } = params;
+const ReviewDetails = async ({
+  params,
+}: {
+  params: { rid: string; id: string };
+}) => {
+  const { rid, id } = await params;
   return (
     <div>
       review {rid} of product details {id}{" "}
